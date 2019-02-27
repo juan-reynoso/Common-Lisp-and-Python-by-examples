@@ -1,0 +1,21 @@
+
+#+TITLE: Common Lisp and Python by examples
+
+
+* Examples
+I would like to share some examples that have written by me, so you can enhance, fix or share them.
+** lists
+A list is a collection which is ordered and changeable.
+*** Create a List:
+**** Lisp
+#+BEGIN_EXAMPLE
+(setf thislist '("apple" "banana" "cherry"))
+(format t "~a" thislist)
+#+END_EXAMPLE
+**** Python
+#+BEGIN_EXAMPLE
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+#+END_EXAMPLE
+#+AUTHOR: Juan Reynoso Elias
+
