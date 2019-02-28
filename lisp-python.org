@@ -48,4 +48,19 @@ NIL
 
 #+AUTHOR: Juan Reynoso Elias
 
-
+*** List Length
+**** Lisp
+#+BEGIN_EXAMPLE
+CL-USER> (defparameter *thislist* '(1 2 3 4 5))
+*THISLIST*
+CL-USER> (length *thislist*)
+5
+CL-USER> 
+#+END_EXAMPLE
+**** Python
+#+BEGIN_EXAMPLE
+>>> thislist = [1, 2, 3, 4, 5]
+>>> len(thislist)
+5
+>>>
+#+END_EXAMPLE
