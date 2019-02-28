@@ -9,13 +9,43 @@ A list is a collection which is ordered and changeable.
 *** Create a List:
 **** Lisp
 #+BEGIN_EXAMPLE
-(setf thislist '("apple" "banana" "cherry"))
-(format t "~a" thislist)
+CL-USER> (defparameter *thislist* '("apple" "banana" "cherry"))
+*THISLIST*
+CL-USER> (format t "~a" *thislist*)
+(apple banana cherry)
+NIL
+CL-USER> 
 #+END_EXAMPLE
 **** Python
 #+BEGIN_EXAMPLE
-thislist = ["apple", "banana", "cherry"]
-print(thislist)
+
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>> 
 #+END_EXAMPLE
+*** Loop Through a List
+**** Lisp
+#+BEGIN_EXAMPLE
+CL-USER> (defparameter *thislist* '(1 2 3))
+*THISLIST*
+CL-USER> (dolist (item *thislist* ) (format t "~a " item))
+1 2 3 
+NIL
+#+END_EXAMPLE
+**** Python
+#+BEGIN_EXAMPLE
+
+>>> thislist = [1, 2, 3]
+>>> for x in thislist:
+  print(x)
+... ... 
+1
+2
+3
+>>>
+#+END_EXAMPLE
+
 #+AUTHOR: Juan Reynoso Elias
+
 
